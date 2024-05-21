@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+
+}
+
+html, body {
+    /* background: linear-gradient(90deg, #F87516 0%, #5E11FF 100%); */
+    background-color: black;
+    color: #fff;
+    font-family: 'Sora', 'Outfit';
+  
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.dg.ac {
+    display: none;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    padding: 10px 20px;
+    margin-top: 10vh;
+    width: 100%;
+    position: relative; /* Required for z-index to work */
+    z-index: 1; /* Ensure header appears above canvas */
+    pointer-events: none;
+}
+
+ #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar #logo {
+    justify-content: center;
+    align-items: center;
+    margin: 15vh 20vh;
+    text-align: center;
+    
+}
+
+#logo h3 {
+    color: violet;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#navbar #button {
+    justify-content: center;
+
+    
+}
+
+#navbar #button #btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    margin: 10vh 17vh ;
+    padding: 15px 20px ;
+    transform: skew(-2deg);
+    border-radius: 5px;
+    pointer-events: auto;
+}
+
+#navbar #button #btn:hover {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure canvas is behind other elements */
+    background-size: cover;
+}
+
+#main-section {
+    margin-top: 10vh;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: relative; /* Required for z-index to work */
+    z-index: 1; /* Ensure main section appears above canvas */
+    pointer-events: none;
+    
+}
+
+#main-section {
+    gap: 10vw;
+}
+
+#main-section #right-content {
+    width: 20%;
+    align-items: center;
+    justify-content: flex-start;
+}
+#main-section #right-content span {
+    font-size: 23px;
+    
+
+}
+
+.gradient {
+    background: linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 10px 10px;
+}
+
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#main-content #main-text {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: left;
+}
+#main-content span {
+    font-size: 60px;
+    margin-top: 7px;
+}
+
+
+#second-section {
+    margin-top: 10vh;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    margin: 10px 0;
+}
+
+#second-section #organizations {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#second-section #organizations #img {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#purchase-section {
+    margin-top: 10vh;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    
+}
+
+#purchase-section #left h2 {
+    display: flex;
+    font-size: 40px;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+#purchase-section #left p {
+    font-weight: 200;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+#purchase-section #left #buttons {
+    display: inline-flex;
+    background: linear-gradient(90deg, #F87516 0%, #5E11FF 100%);
+    padding: 24px 60px;
+    justify-content: flex-start;
+    border: none;
+    border-radius: 10px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+#purchase-section #left #buttons a {
+    text-decoration: none;
+    color: white;
+}

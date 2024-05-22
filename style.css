@@ -83,7 +83,15 @@ header {
     color: white;
     cursor: pointer;
 }
-
+#navbar #button #btn a {
+    text-decoration: none;
+    color: black;
+}
+#navbar #button #btn a:hover {
+    /* background-color: transparent; */
+    color: white;
+    cursor: pointer;
+}
 #background {
     position: fixed;
     top: 0;
@@ -220,4 +228,76 @@ header {
 #purchase-section #left #buttons a {
     text-decoration: none;
     color: white;
+}
+
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        margin-top: 5vh;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar #logo {
+        margin: 5vh 0;
+    }
+
+    #navbar #button {
+        margin-top: 2vh;
+    }
+
+    #navbar #button #btn {
+        margin: 2vh 0;
+    }
+
+    #main-section {
+        flex-direction: column;
+        padding: 20px;
+        gap: 5vw;
+    }
+
+    #main-section #right-content {
+        width: 100%;
+    }
+
+    #main-content #main-text {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #main-content span {
+        font-size: 40px;
+    }
+
+    #second-section {
+        margin-top: 5vh;
+        padding: 20px;
+    }
+
+    #second-section #organizations {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #purchase-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #purchase-section #left h2 {
+        font-size: 30px;
+    }
+
+    #purchase-section #left p {
+        font-size: 14px;
+    }
+
+    #purchase-section #left #buttons {
+        padding: 15px 30px;
+    }
 }

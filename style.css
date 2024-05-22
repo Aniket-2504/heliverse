@@ -238,6 +238,7 @@ header {
         flex-direction: column;
         height: auto;
         margin-top: 5vh;
+        pointer-events: auto;
     }
 
     #navbar {
@@ -260,6 +261,7 @@ header {
         flex-direction: column;
         padding: 20px;
         gap: 5vw;
+        pointer-events: auto;
     }
 
     #main-section #right-content {
@@ -278,6 +280,7 @@ header {
     #second-section {
         margin-top: 5vh;
         padding: 20px;
+        pointer-events: auto;
     }
 
     #second-section #organizations {
@@ -288,6 +291,7 @@ header {
     #purchase-section {
         flex-direction: column;
         padding: 20px;
+        pointer-events: auto;
     }
 
     #purchase-section #left h2 {
